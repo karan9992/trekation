@@ -1,0 +1,194 @@
+*{
+    font-family: 'roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center fixed;
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    margin: 0;padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+   display: flex;
+     justify-content: center;
+     flex-direction: column;
+   align-items: start;
+  
+  
+  
+    
+    /* border: 2px solid rgb(52, 140, 74); */
+    background-color: rgba(0, 0, 0, 0.662);
+    backdrop-filter: blur(4px);
+    width: 30%;
+    padding: 4vmin;
+    border-radius: 2vmin;
+    
+}
+label{
+    margin-left: 2vmin;
+    display: block;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 0;
+    margin-top: 1vmin;
+   
+}
+h1{
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: 100;
+    font-size: 4vmin;
+    align-self: center;
+    margin-top: 1vmin;
+   margin-bottom: 1vmin;
+}
+.together{
+    display: inline-flex;
+    width: 100%;
+   
+}
+.name{
+   
+    margin-right: 2vmin;
+    width: 50%;
+    /* border: 2px solid rgba(186, 127, 25, 0.61); */
+    padding:  0;
+    
+    box-sizing: border-box;
+
+}
+input{
+  
+    width: 95%;  
+
+}
+input:focus{
+    outline: none;
+}
+.formBox{
+    border: 2px solid rgb(90, 29, 13);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    
+
+
+}
+input{
+    margin: 1vmin;
+    padding: 1vmin;
+    font-size: 2vmin;
+    border-radius: 2px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(70, 69, 60, 0.489);
+    
+}
+input::placeholder {
+    color: rgba(97, 95, 85, 0.788);
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type=date]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-day-field,
+input[type=date]::-webkit-datetime-edit-month-field,
+ input[type=date]::-webkit-datetime-edit-year-field {
+    
+    /* display: none; */
+    color: rgba(97, 95, 85, 0.788);
+}
+
+button{
+    margin: 4vmin;
+    padding: 1vmin;
+    font-size: 3vmin;
+    border-radius: 2px;
+    border: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(169, 130, 30, 0.489);
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 97%;
+    align-self: center;
+}
+button:hover{
+    background-color: rgb(224, 172, 38);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+a:hover{
+    color: rgb(58, 162, 236);
+}
+p{
+    color: rgba(255, 255, 255, 0.763);
+    font-size: 1.6vmin;
+    align-self: center;
+}
+p a{
+    color: rgb(143, 181, 40);
+    transition: all 0.5s;
+}
+
+
+@media screen and (max-width: 800px){
+    form{
+        width: 90%;
+       margin: 5vmin 3vmin; 
+       padding: 10vmin 2vmin;
+
+      
+    }
+    input,button{
+        margin: 3vmin;
+        font-size: 5vmin;
+        padding: 2vmin;
+        width: 90%;
+    }
+    label{
+        font-size: 6vmin;
+        font-weight: 100;
+    }
+    p{
+        font-size: 4vmin;
+    }
+    .together{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .name{
+        width: 100%;
+       
+    }
+    
+    body{
+        height: 100vh;
+        display:flex;
+        justify-content: center;    
+        align-items: center;
+        
+    }
+   
+}
